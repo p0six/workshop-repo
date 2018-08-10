@@ -17,7 +17,7 @@ user 'tomcat' do
   action :create
 end
 
-remote_file "apache-tomcat-8.0.53.tar.gz" do
+remote_file 'apache-tomcat-8.0.53.tar.gz' do
   path "#{Chef::Config[:file_cache_path]}/apache-tomcat-8.0.53.tar.gz"
   source 'http://mirror.cc.columbia.edu/pub/software/apache/tomcat/tomcat-8/v8.0.53/bin/apache-tomcat-8.0.53.tar.gz'
   action :nothing

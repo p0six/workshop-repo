@@ -44,8 +44,7 @@ end
 end
 
 describe file('/etc/systemd/system/tomcat.service') do
-  # its('content') { should match( %r{/Apache Tomcat Web Application Container/} ) }
-  its('content') { should match(%r{Apache Tomcat Web Application Container}) }
+  its('content') { should match(/Apache Tomcat Web Application Container/) }
 end
 
 describe command('curl http://localhost:8181') do

@@ -4,7 +4,7 @@ maintainer_email 'romerom@gmail.com'
 license 'MIT'
 description 'Installs/Configures tomcat'
 long_description 'Installs/Configures tomcat'
-version '1.0.0'
+version '1.1.2'
 chef_version '>= 12.1' if respond_to?(:chef_version)
 
 # The `issues_url` points to the location where issues for this cookbook are
@@ -19,4 +19,4 @@ issues_url 'https://github.com/p0six/workshop-repo/issues'
 #
 source_url 'https://github.com/p0six/workshop-repo'
 
-supports centos
+supports 'centos'

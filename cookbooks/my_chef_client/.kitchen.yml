@@ -18,11 +18,8 @@ platforms:
 suites:
   - name: default
     run_list:
-      - recipe[tomcat::default]
-      - recipe[tomcat::tomcat_users]
+      - recipe[my_chef_client::default]
     verifier:
       inspec_tests:
-        - test/smoke/default
+        - test/integration/default
     attributes:
-      tomcat:
-        tomcat_port: '8181'
